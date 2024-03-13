@@ -1,0 +1,18 @@
+{
+  "name": "revisaofullstackoficial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.3"
+  },
+  "scripts": {
+    "test": "echo \"Error no test specified\" && exit1",
+    "ScriptEx1": "node src/ex1.js",
+    "ScriptEx2": "node src/ex2.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "sucrase": "^3.35.0"
+  }
+}
