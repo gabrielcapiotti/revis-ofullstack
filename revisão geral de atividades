@@ -1,0 +1,96 @@
+/*1.Imprima no console usando node as seguintes informações: "Esse é meu primeiro código node".*/
+console.log("Esse é meu primeiro código em Node.");
+/*
+
+/*2. Imprima no console usando node as seguintes informações: "Meu nome é X, tenho Y anos e meus hobbies são Z1, Z2 e Z3.
+console.log("Meu nome é Gabriel Capiotti, tenho 23 anos e meus hobbies são escrita criativa, video-games e literatura.");
+*/
+
+/*
+console.log("Esse é meu primeiro código em Node.");
+
+let numero1 = 13
+let numero2 = 10
+let soma = numero1 + numero2
+console.log(`A soma é: ${soma}`);
+*/
+
+
+/*CONDICIONAIS IF E ELSE/ EXERCICIOS PARTE 2*/
+
+/*
+const idade = 23;
+
+if (idade < 0) {
+    console.log("Erro: A idade não pode ser negativa.");
+} else if (idade >= 0 && idade < 12) {
+    console.log("A pessoa é uma criança.");
+} else if (idade >= 12 && idade < 18) {
+    console.log("A pessoa é um adolescente.");
+} else if (idade >= 18 && idade < 60) {
+    console.log("A pessoa é um adulto.");
+} else {
+    console.log("A pessoa é um idoso.");
+}
+*/
+
+
+/* EXERCICIOS DA PARTE 3*/
+/*
+let listaProdutos = [];
+
+// Função para criar um novo produto
+function criarProduto(nome, preco) {
+    if (nome && preco) {
+        listaProdutos.push({ nomeProduto: nome, precoProduto: preco });
+        console.log(`Novo produto "${nome}" adicionado com sucesso por R$ ${preco}`);
+    } else {
+        console.log("Erro: Nome e preço são obrigatórios!");
+    }
+}
+
+// Função para ler todos os produtos
+function lerProdutos() {
+    if (listaProdutos.length === 0) {
+        console.log("Estoque vazio. Cadastre Produtos!");
+    } else {
+        console.log("Produtos disponíveis:");
+        listaProdutos.forEach(produto => {
+            console.log(`Nome: ${produto.nomeProduto}, Preço: R$ ${produto.precoProduto}`);
+        });
+    }
+}
+
+// Função para atualizar um produto pelo nome
+function atualizarProduto(nomeAtual, novoNome, novoPreco) {
+    let produtoEncontrado = listaProdutos.find(produto => produto.nomeProduto === nomeAtual);
+    if (produtoEncontrado) {
+        produtoEncontrado.nomeProduto = novoNome || produtoEncontrado.nomeProduto;
+        produtoEncontrado.precoProduto = novoPreco || produtoEncontrado.precoProduto;
+        console.log(`Produto "${nomeAtual}" atualizado para "${novoNome}" por R$ ${novoPreco}`);
+    } else {
+        console.log(`Produto "${nomeAtual}" não encontrado para atualização`);
+    }
+}
+
+// Função para deletar um produto por nome
+function deletarProduto(nome) {
+    let index = listaProdutos.findIndex(produto => produto.nomeProduto === nome);
+    if (index !== -1) {
+        listaProdutos.splice(index, 1);
+        console.log(`Produto "${nome}" deletado com sucesso`);
+    } else {
+        console.log(`Produto "${nome}" não encontrado para exclusão`);
+    }
+}
+
+// Exemplos de uso das funções
+criarProduto("Espada", 100);
+criarProduto("Armadura", 200);
+lerProdutos();
+atualizarProduto("Espada", "Nova Espada", 150);
+deletarProduto("Armadura");
+lerProdutos();
+
+*/
+
